@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .loader {
+        /* background-color: red; */
+        width: 56px;
+        height: 56px;
+        border: 9px solid rgb(175, 175, 199);
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: size 5s infinite;
+      }
+
+      @keyframes size {
+        from {
+            transform: scale(1);
+        }
+
+         50%{
+            transform: scale(1.2);
+        }
+
+        to {
+            transform: scale(1);
+        }
+      }
+
+      .loader00 {
+        width: 56px;
+        height: 56px;
+        border: 9px solid rgb(44, 44, 96);
+        border-radius: 50px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 0px;
+        position: absolute;
+        animation: load 2s infinite;
+      }
+
+      @keyframes load {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="loader00"></div>
+    </div>
+  </body>
+</html>

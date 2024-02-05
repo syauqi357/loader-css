@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.boxLoad {
+  background-color: #4e4e4e;
+  padding: 13px;
+
+  border-radius: 13px;
+}
+
+.loadWrapper00 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+
+  /* height: 100vh; */
+}
+
+.loader_S {
+  width: 10px;
+  height: 9.45px;
+  background-color: #dfdfdf;
+  animation: height 1.75s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+@keyframes height {
+  from {
+    height: 30px;
+  }
+
+  50% {
+    height: 45px;
+  }
+
+  to {
+    height: 30px;
+  }
+}

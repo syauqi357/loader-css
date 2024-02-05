@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loadWrapper {
+  display: flex;
+  width: 100px;
+  /* background-color: #d7d7d7; */
+  justify-content: space-around;
+}
+
+.loader {
+  width: 25px;
+  height: 25px;
+  animation: loadup 2s infinite;
+}
+
+@keyframes loadup {
+  from {
+    background-color: #ffcc70;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    background-color: #c850c0;
+    border-radius: 50px;
+  }
+
+  90% {
+    background-color: #4158d0;
+  }
+
+  to {
+    background-color: #ffcc70;
+    transform: rotate(360deg);
+  }
+}
